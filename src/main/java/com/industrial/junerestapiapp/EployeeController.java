@@ -13,6 +13,12 @@ public class EployeeController {
    @Autowired
    private EmployeeRepository employeeRepository;
 
+   //this is the method i have added
+    public void getMe(){
+        
+    }
+
+
     @GetMapping("/getGreetings/{username}")
     public static String getGreetings(@PathVariable String username) {
         Calendar c = Calendar.getInstance();
